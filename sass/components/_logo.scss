@@ -1,0 +1,19 @@
+.logo {
+    &__link {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        color: $hover-focus-color; 
+        margin: 0px;
+        &--header {
+            margin-right: 93px;
+        }
+    }
+    &__span--footer {
+        color: $main-text-white-color;
+    }
+    &__span--header {
+        color: $studio-logo-color;
+    }
+}

@@ -1,0 +1,230 @@
+.hero {
+    text-align: center; 
+    max-width: 1600px;
+    
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)), url(../images/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-color: $footer-bg-color;
+    &__title {
+        font-size: 44px;
+        line-height: 1.36;
+        color: $main-text-white-color;
+        font-weight: 900;
+        text-align: center;
+        width: 696px;
+        margin: 0px auto;
+        margin-bottom: 30px;
+    }
+    &__button{
+        font-size: 16px;
+        line-height: 1.875;
+        color: $main-text-white-color;
+        font-weight: 700;
+        background-color: $hover-focus-color;
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin: 0px;
+        padding: 10px 32px;
+    }
+    &-modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        min-width: 528px;
+        min-height: 581px;
+        background-color: $main-text-white-color;
+        border-radius: 4px;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+        padding: 40px;
+        &__button {
+            &--close {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                color: $main-text-white-color;
+                background-color: $main-text-white-color;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 50%;
+                top: 8px;
+                right: 8px;
+                outline: none;
+                transition:  color $time $timing-function, border-color $time $timing-function;
+                &:hover, &:focus {
+                    color: $main-text-white-color;
+                    background-color: $main-text-white-color;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    border-radius: 50%;
+                    transition:  color $time $timing-function, border-color $time $timing-function;
+                    & .hero-modal__icon--close {
+                        fill: $hover-focus-color;
+                        transition:  fill $time $timing-function;
+                    }
+                }
+            }
+            &--send {
+                width: 200px;
+                height: 50px;
+                background-color: $hover-focus-color;
+                color: $main-text-white-color;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+                transition: transform $time $timing-function;
+            }
+        }
+        &__form {
+            display: block;
+            margin-left: auto;
+        }
+        &__div {
+            position: relative;
+            margin-top: 4px;
+            margin-bottom: 10px;
+            &:nth-child(4) {
+                margin-bottom: 20px;
+            }
+            &--check {
+                position: relative;
+                margin-bottom: 30px; 
+            }
+        }
+        &__label {    
+            position: relative;
+            color: $main-text-color;
+            font-size: 12px;
+            line-height: 1.17;
+            transition: transform $time $timing-function;
+            &--check {
+                display: inline-block;
+            }       
+        }
+        &__input {
+            position: relative;
+            cursor: pointer;
+            border: 1px solid $border-color-input;
+            border-radius: 4px;
+            width: 100%;
+            height: 40px;
+            text-align: left;
+            padding-left: 42px;
+            transition: transform $time $timing-function;
+            outline: none;
+            &--comment {
+                width: 448px;
+                height: 120px;
+                padding: 12px 16px;
+                text-align: left;
+                &::placeholder {
+                    color: $pleceholder-color;
+                    transform: translateX(0%);
+                    transform: translateY(-250%);
+                    transition: transform $time $timing-function;
+                }
+            }
+            &--name:hover + .hero-modal__icon--name, &--name:focus + .hero-modal__icon--name {
+                fill: $hover-focus-color;
+                transition: transform $time $timing-function;            
+            }
+            &--tel:hover + .hero-modal__icon--tel, &--tel:focus + .hero-modal__icon--tel {
+                fill: $hover-focus-color;
+                transition: transform $time $timing-function;            
+            }
+            &--email:hover + .hero-modal__icon--email, &--email:focus + .hero-modal__icon--email {
+                fill: $hover-focus-color;
+                transition: transform $time $timing-function;            
+            }
+            &:hover, &:focus {
+                cursor: pointer;
+                border-radius: 4px;
+                border: 1px solid $hover-focus-color;
+                transition: transform $time $timing-function;
+            }
+        }       
+        &__span-form {
+            display: block;
+            text-align: left;
+        }
+        &__icon {
+            position: absolute;
+            cursor: pointer;
+            left: 12px;
+            top: 15px;
+            transform: translateY(60%);
+            transition: transform $time $timing-function;
+            &:focus, &:hover {
+                position: absolute;
+                cursor: pointer;
+                fill: $hover-focus-color;
+                transition: transform $time $timing-function;               
+            }
+            &--close {
+                position: relative;
+                display: inline-block;
+                fill: $studio-logo-color;
+                align-items: center;          
+                cursor: pointer;
+                text-align: center; 
+                transition:  fill $time $timing-function;
+            }
+            &--check {
+                display: inline-block;
+                width: 16px;
+                height: 15px;
+                background-color: $main-text-white-color;
+                border: 2px solid $main-title-color;
+                border-radius: 4px;
+            }
+        }
+        &__data{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1.172;
+            color: $color-data;
+            margin-bottom: 12px;
+        }
+        &__checkbox { 
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            position: absolute;
+            &:hover + .hero-modal__icon--check, &:focus + .hero-modal__icon--check {
+                border-color: $hover-focus-color;
+            }
+            &:checked + .hero-modal__icon--check {
+                border-color: transparent;
+                background-color: $hover-focus-color;
+                background-image: url('../images/check.svg');
+                background-size: contain;
+                background-origin: border-box;
+            }
+        }
+        &__contract {
+            color: var(--hover-focus-color);
+            text-decoration: underline;
+        }
+    }
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    opacity: 1;
+    transition: opacity $time $timing-function, visibility $time $timing-function;
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }   
+}

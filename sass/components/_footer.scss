@@ -1,0 +1,125 @@
+.footer {
+    background-color: $footer-bg-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .container{
+        display: flex;
+        align-items: baseline;
+    }
+    &__info {
+        margin-right: 70px;
+    }
+    &__address {
+        font-family: inherit;
+        font-style: normal;
+        font-size: 14px;
+        color: $main-text-white-color; 
+        line-height: 1.71;
+        margin-top: 20px;
+    }
+}
+
+.container-add {
+    &__topic{
+        text-transform: uppercase;
+        width: 145px;
+        height: 16px;
+        font-size: 14px;
+        line-height: 1.17;
+        color: $main-text-white-color;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__list {
+        margin: 20px 0px 0px 0px;
+        display: flex;
+        align-content: center;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 10px; 
+        }
+    }
+    &__link {
+        display: flex;
+        align-content: center;
+        text-align: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50px; 
+        justify-content: center;
+        align-items: center;
+        fill: $main-text-white-color;
+        cursor: pointer;
+        background: $bg-color-add;
+        transition:  fill $time $timing-function, background $time $timing-function;
+        &:focus, &:hover {
+            fill: $main-text-white-color;
+            background: $hover-focus-color;
+            transition:  fill $time $timing-function, background $time $timing-function;
+        }
+    }
+    &__icon {
+        display: flex;
+        align-content: center;
+        text-align: center;
+        display: block;
+    }
+}
+
+.container-mailing {
+    &__list{
+        display: flex;
+        margin-left: 94px;
+        align-content: center;
+        width: 570px;
+        height: 86px;
+        margin-right: 0px;
+    }
+    &__label {
+        text-transform: uppercase;
+        width: 145px;
+        height: 16px;
+        font-size: 14px;
+        line-height: 1.17;
+        color: $main-text-white-color;
+        font-weight: 700;
+        text-align: center;
+        width: 219px;
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        text-align: center;
+        background-color: $hover-focus-color;
+        color: $main-text-white-color;
+        width: 200px;
+        height: 50px;
+        padding-left: 29px;
+        margin-left: 12px;
+        margin-top: 36px;
+        &:hover, &:focus {
+            background-color: $hover-focus-color;
+            color: $main-text-white-color;
+        }
+    }
+    &__icon {
+        fill: $main-text-white-color;
+        margin-left: 10px;
+    }
+    &__input {
+        width: 358px;
+        height: 50px;
+        background-color: $footer-bg-color;
+        border: 1px solid $border-input-color; 
+        border-radius: 4px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 0;
+        margin-top: 13px;
+        outline: none;
+        color: rgba(225, 225, 225, 60);
+    }
+}
