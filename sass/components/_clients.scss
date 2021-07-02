@@ -1,6 +1,6 @@
 .clients {
-    // padding-top: 94px;
-    // padding-bottom: 94px;     
+    padding-top: 94px;
+    padding-bottom: 94px;     
     &__title { 
         margin-bottom: 50px;
         font-size: 36px;
@@ -10,7 +10,7 @@
         text-align: center;
     }
     &__list {
-        // display: flex;
+        display: flex;
         align-content: center;
     }
     &__item {
