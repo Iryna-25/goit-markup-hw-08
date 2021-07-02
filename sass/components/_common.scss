@@ -47,27 +47,24 @@ a {
     text-decoration: none; 
 }
 
-img {
-    display: block;
-}
-
 image {
-    max-width: 100%;
+    // max-width: 100%;
     height: auto;
     display: block;
 }
 
 .container  {
-    width: 1200px;
+    // width: 1200px;
+    width: 100%;
     padding: 0px 15px;
     margin: 0px auto;
-}
-
-.container  {
     @media screen and (min-width: 480px) {
         width: 480px;      
     }
-    // width: 1200px;
-    // padding: 0px 15px;
-    // margin: 0px auto;
+    @media screen and (min-width: 768px) {
+        width: 768px;   
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;      
+    }
 }
