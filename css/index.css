@@ -610,6 +610,18 @@ image {
   padding-top: 60px;
 }
 
+@media screen and (min-width: 480px) {
+  .features {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-bottom: 0px;
+  }
+}
+
 .features__list {
   align-content: center;
 }
@@ -624,9 +636,6 @@ image {
 
 @media screen and (min-width: 1200px) {
   .features__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
     padding-top: 94px;
   }
 }
@@ -639,6 +648,7 @@ image {
   .features__item {
     flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
+    margin-bottom: 0px;
   }
 }
 
@@ -976,7 +986,7 @@ image {
 
 @media screen and (min-width: 480px) {
   .team__list {
-    margin-left: -30px;
+    margin-left: 0px;
   }
 }
 
@@ -991,6 +1001,7 @@ image {
   .team__list {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
   }
 }
 
