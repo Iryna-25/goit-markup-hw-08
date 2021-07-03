@@ -1,6 +1,9 @@
 .clients {
     padding-top: 94px;
-    padding-bottom: 94px;     
+    padding-bottom: 60px; 
+    @media screen and (min-width: 768px) {
+        padding-bottom: 94px;
+    }    
     &__title { 
         margin-bottom: 50px;
         font-size: 36px;
@@ -17,9 +20,10 @@
         margin-left: -30px;
     }
     @media screen and (min-width: 768px) {
-        display: flex; 
-        flex-wrap: wrap;
+        // display: flex; 
+        // flex-wrap: wrap;
     }
+    
     }
     &__item {
         color: $border-color-clients;
@@ -33,6 +37,7 @@
         }
         @media screen and (min-width: 1200px) {
             flex-basis: calc((100% - 180px) / 6);
+            margin-bottom: 0px;
         }
     }
     &__link {

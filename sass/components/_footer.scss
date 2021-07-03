@@ -1,7 +1,12 @@
 .footer {
     background-color: $footer-bg-color;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;   
+    }
+    @media screen and (min-width: 1200px) {
+ 
+    }
     .container{
         align-items: baseline;
         @media screen and (min-width: 1200px) {
@@ -14,10 +19,9 @@
             text-align: center;    
         }
         @media screen and (min-width: 1200px) {
-            margin-right: 70px;    
-        }
-
-        
+            margin-right: 70px;
+            text-align: left; 
+        }        
     }
     &__address {
         font-family: inherit;
@@ -109,6 +113,7 @@
             width: 570px;
             height: 86px;
             margin-right: 0px;
+            text-align: left;
         }
 
     }
