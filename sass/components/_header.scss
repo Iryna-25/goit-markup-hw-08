@@ -4,12 +4,16 @@
     &__container  {
         display: flex;
         align-items: center;
+        padding-top: 16px;
     }
 }
 
 .nav {
-    display: flex;
     align-items: center;
+    @media screen and (min-width: 768px) {
+        display: flex;    
+    }
+
     &__list {
         display: flex;
         align-content: center;
@@ -21,7 +25,30 @@
         & .nav__item:not(:last-child) {
             margin-right: 50px;            
         }
+        @media screen and (min-width: 480px) {
+            display: none;    
+        }
+        @media screen and (min-width: 768px) {
+            display: flex;    
+        }
+        @media screen and (min-width: 1200px) {
+            display: flex;    
+        }
     }
+    &__btn {
+        @media screen and (min-width: 768px) {
+            display: none;   
+        }
+    }
+    &__icon {
+        background-color: $bg-color;
+        &:hover, &:focus {
+            fill: $hover-focus-color;
+            background-color: $bg-color;
+        }
+    }
+
+
     &__link {
         display: flex;
         align-items: center;
@@ -73,28 +100,26 @@
         margin-left: auto;
         font-weight: 500;
         font-size: 14px;
-        line-height: 1.17;
+        line-height: 1.17; 
+        @media screen and (min-width: 480px) {
+            display: none;    
+        }
+        @media screen and (min-width: 768px) {
+            display: inline-block;    
+        }
+        @media screen and (min-width: 1200px) {
+            display: flex;  
+        }
         &--footer {
             @media screen and (min-width: 480px) {
                 display: inline-block;   
-            }
-            @media screen and (min-width: 1200px) {
-                display:block; 
-                // display: flex;   
-            }
-            
+            }  
         }
         &--current {
             color: $hover-focus-color;
             transition: color $time $timing-function;
         }
-        & .nav__item:not(:last-child) {
-            margin-right: 50px;            
-        }
     }
-    // &__item:not(:last-child) {
-    //     margin-right: 50px;
-    // }
     &__link { 
         display: flex;
         align-items: center;
@@ -103,6 +128,13 @@
         font-weight: 500;
         line-height: 1.17;
         transition: color $time $timing-function;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 10px;   
+        }
+        @media screen and (min-width: 1200px) {
+            margin-left: 30px;
+            margin-bottom: auto;   
+        }
         &:hover, &:focus {
             color: $hover-focus-color;
             transition: color $time $timing-function;
@@ -110,6 +142,10 @@
         &--email--footer, &--tel--footer {
             color: $contacts-footer-color; 
             line-height: 1.17;
+            @media screen and (min-width: 1200px) {
+                margin-left: auto;
+                margin-bottom: auto;
+            }
         }
         &--email--footer {
             margin: 9px 0 9px 0;

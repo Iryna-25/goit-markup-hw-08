@@ -7,7 +7,15 @@
         color: $hover-focus-color; 
         margin: 0px;
         &--header {
-            margin-right: 93px;
+            @media screen and (min-width: 480px) {
+                margin-right: 276px; 
+            }
+            @media screen and (min-width: 768px) {
+                margin-right: 88px;  
+            }
+            @media screen and (min-width: 1200px) {
+                margin-right: 93px;   
+            }
         }
     }
     &__span--footer {

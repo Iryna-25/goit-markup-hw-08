@@ -5,11 +5,17 @@
 .header__container {
   display: flex;
   align-items: center;
+  padding-top: 16px;
 }
 
 .nav {
-  display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
 }
 
 .nav__list {
@@ -24,6 +30,34 @@
 
 .nav__list .nav__item:not(:last-child) {
   margin-right: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .nav__list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__btn {
+    display: none;
+  }
+}
+
+.nav__icon {
+  fill: red;
 }
 
 .nav__link {
@@ -77,24 +111,32 @@
 }
 
 @media screen and (min-width: 480px) {
-  .contacts__list--footer {
+  .contacts__list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list {
     display: inline-block;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .contacts__list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .contacts__list--footer {
-    display: block;
+    display: inline-block;
   }
 }
 
 .contacts__list--current {
   color: #2196F3;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts__list .nav__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .contacts__link {
@@ -107,6 +149,19 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__link {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    margin-left: 30px;
+    margin-bottom: auto;
+  }
+}
+
 .contacts__link:hover, .contacts__link:focus {
   color: #2196F3;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -115,6 +170,13 @@
 .contacts__link--email--footer, .contacts__link--tel--footer {
   color: rgba(253, 241, 241, 0.6);
   line-height: 1.17;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__link--email--footer, .contacts__link--tel--footer {
+    margin-left: auto;
+    margin-bottom: auto;
+  }
 }
 
 .contacts__link--email--footer {
@@ -445,8 +507,22 @@ image {
   margin: 0px;
 }
 
-.logo__link--header {
-  margin-right: 93px;
+@media screen and (min-width: 480px) {
+  .logo__link--header {
+    margin-right: 276px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo__link--header {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo__link--header {
+    margin-right: 93px;
+  }
 }
 
 .logo__span--footer {
