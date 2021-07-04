@@ -1,6 +1,5 @@
 
 .header {
-    position: relative;
     border-bottom: 1px solid $bg-color;
     &__container  {
         display: flex;
@@ -26,9 +25,9 @@
         & .nav__item:not(:last-child) {
             margin-right: 50px;            
         }
-        // @media screen and (min-width: 480px) {
-        //     display: none;    
-        // }
+        @media screen and (min-width: 480px) {
+            display: none;    
+        }
         @media screen and (min-width: 768px) {
             display: flex;    
         }
@@ -54,12 +53,6 @@
         &.is-hidden .nav__list { 
             display: none;
         } 
-        & .nav__div {
-            position: absolute;
-            display: block;
-            background:red;
-
-        }
         @media screen and (min-width: 768px) {
             display: none;   
         }
@@ -181,5 +174,16 @@
         &:focus, &:hover {
             fill: $hover-focus-color;
         }
+    }
+}
+
+.mobile {
+    position: absolute;
+    display: block;
+    background:red;
+    width: 100vw;
+    height: 100vh;
+    @media screen and (min-width: 768px) {
+        display: none;   
     }
 }

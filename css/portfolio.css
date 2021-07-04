@@ -1,5 +1,4 @@
 .header {
-  position: relative;
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -31,6 +30,12 @@
 
 .nav__list .nav__item:not(:last-child) {
   margin-right: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .nav__list {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -68,12 +73,6 @@
 
 .nav__btn.is-hidden .nav__list {
   display: none;
-}
-
-.nav__btn .nav__div {
-  position: absolute;
-  display: block;
-  background: red;
 }
 
 @media screen and (min-width: 768px) {
@@ -221,6 +220,20 @@
 
 .contacts__icon:focus, .contacts__icon:hover {
   fill: #2196F3;
+}
+
+.mobile {
+  position: absolute;
+  display: block;
+  background: red;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
 }
 
 .footer {
@@ -461,13 +474,14 @@
 @media screen and (min-width: 480px) {
   .container-mailing__form {
     margin-top: 60px;
-    width: 480px;
+    width: 450px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container-mailing__form {
     margin-top: 60px;
+    width: 480px;
   }
 }
 
