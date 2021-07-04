@@ -17,12 +17,12 @@
         <div class="container header__container">  
             <nav class="nav">
                 <a href="#" class="logo__link logo__link--header"> Web<span class="logo__span--header" >Studio</span></a>
-                <button type="button" class="nav__btn is-open" > 
-                    <svg class="nav__icon" width="24" height="16" aria-label="Переключатель мобильного меню" > 
+                <button type="button" class="nav__btn is-hidden data-nav__btn" > 
+                    <svg class="nav__icon" width="24" height="16" aria-expanded="false" aria-label="Переключатель мобильного меню" > 
                         <use class="nav__icon--menu" href="./images/icons.svg#icon-menu"></use>
                         <use class="nav__icon--cross" href="./images/icons.svg#icon-cross"> </use>
                     </svg>
-                     </button>
+                </button>
                 <ul class="nav__list">                    
                     <li class="nav__item"><a class="nav__link nav__link--current" href="./index.html">Студия</a></li>
                     <li class="nav__item"><a class="nav__link" href="./portfolio.html">Потрфолио</a></li>
@@ -430,5 +430,6 @@
         </div>        
     </footer> 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

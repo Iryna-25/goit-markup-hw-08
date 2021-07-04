@@ -1,5 +1,6 @@
 
 .header {
+    position: relative;
     border-bottom: 1px solid $bg-color;
     &__container  {
         display: flex;
@@ -25,9 +26,9 @@
         & .nav__item:not(:last-child) {
             margin-right: 50px;            
         }
-        @media screen and (min-width: 480px) {
-            display: none;    
-        }
+        // @media screen and (min-width: 480px) {
+        //     display: none;    
+        // }
         @media screen and (min-width: 768px) {
             display: flex;    
         }
@@ -44,12 +45,23 @@
         & .nav__icon--menu {
             display: none;
         }
-        &.is-open .nav__icon--menu {
+        &.is-hidden .nav__icon--menu {
             display: block;
         }
-        &.is-open .nav__icon--cross {
+        &.is-hidden .nav__icon--cross {
             display: none;
         } 
+        &.is-hidden .nav__list {
+            display: none;
+        } 
+        & .nav__list {
+            position: absolute;
+            display: block;
+            background:red;
+
+        }
+
+
         @media screen and (min-width: 768px) {
             display: none;   
         }
