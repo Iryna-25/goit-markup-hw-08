@@ -5,11 +5,11 @@
 .header__container {
   display: flex;
   align-items: center;
-  padding-top: 16px;
 }
 
 .nav {
   align-items: center;
+  padding-top: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -50,14 +50,35 @@
   }
 }
 
+.nav__btn {
+  background-color: #FFFFFF;
+}
+
+.nav__btn:hover, .nav__btn:focus {
+  fill: #2196F3;
+  background-color: #FFFFFF;
+}
+
+.nav__btn .nav__icon--menu {
+  display: none;
+}
+
+.nav__btn.is-open .nav__icon--menu {
+  display: block;
+}
+
+.nav__btn.is-open .nav__icon--cross {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .nav__btn {
     display: none;
   }
 }
 
-.nav__icon {
-  fill: red;
+.nav__icon:hover, .nav__icon:focus {
+  fill: #2196F3;
 }
 
 .nav__link {

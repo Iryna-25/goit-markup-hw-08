@@ -4,12 +4,12 @@
     &__container  {
         display: flex;
         align-items: center;
-        padding-top: 16px;
     }
 }
 
 .nav {
     align-items: center;
+    padding-top: 16px;
     @media screen and (min-width: 768px) {
         display: flex;    
     }
@@ -36,16 +36,28 @@
         }
     }
     &__btn {
+        background-color: $main-text-white-color;
+        &:hover, &:focus {
+            fill: $hover-focus-color; 
+            background-color: $main-text-white-color;
+        }
+        & .nav__icon--menu {
+            display: none;
+        }
+        &.is-open .nav__icon--menu {
+            display: block;
+        }
+        &.is-open .nav__icon--cross {
+            display: none;
+        } 
         @media screen and (min-width: 768px) {
             display: none;   
         }
     }
     &__icon {
-        background-color: $bg-color;
         &:hover, &:focus {
-            fill: $hover-focus-color;
-            background-color: $bg-color;
-        }
+            fill: $hover-focus-color; 
+        }      
     }
 
 
