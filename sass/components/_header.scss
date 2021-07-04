@@ -54,14 +54,12 @@
         &.is-hidden .nav__list {
             display: none;
         } 
-        & .nav__list {
+        & .nav__div {
             position: absolute;
             display: block;
             background:red;
 
         }
-
-
         @media screen and (min-width: 768px) {
             display: none;   
         }

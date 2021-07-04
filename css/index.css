@@ -70,7 +70,7 @@
   display: none;
 }
 
-.nav__btn .nav__list {
+.nav__btn .nav__div {
   position: absolute;
   display: block;
   background: red;
@@ -80,6 +80,10 @@
   .nav__btn {
     display: none;
   }
+}
+
+.nav__icon {
+  fill: #212121;
 }
 
 .nav__icon:hover, .nav__icon:focus {
