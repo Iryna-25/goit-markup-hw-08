@@ -67,6 +67,7 @@
         }
     }
     &__icon {
+        fill: $main-title-color;
         &:hover, &:focus {
             fill: $hover-focus-color; 
         }      
