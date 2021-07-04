@@ -1,5 +1,6 @@
 
 .header {
+    position: relative;
     border-bottom: 1px solid $bg-color;
     &__container  {
         display: flex;
@@ -36,6 +37,8 @@
         }
     }
     &__btn {
+        width: 40px;
+        height: 40px;
         background-color: $main-text-white-color;
         &:hover, &:focus {
             fill: $hover-focus-color; 
@@ -46,16 +49,24 @@
         }
         &.is-hidden .nav__icon--menu {
             display: block;
+            // & .mobile {
+            //     display: none;
+            // }
         }
+
         &.is-hidden .nav__icon--cross {
             display: none;
+            // & .mobile {
+            //     display: block;
+            // }
         } 
-        &.is-hidden .mobile { 
-            display: none;
-        } 
-        & .mobile { 
-            display: block;
-        } 
+        // &.is-hidden .mobile { 
+        //     display: none;
+        // } 
+
+        // &.mobile { 
+        //     display: block;
+        // } 
 
         @media screen and (min-width: 768px) {
             display: none;   
@@ -182,6 +193,11 @@
 }
 
 .mobile {
+
+    // & .nav__btn .is-hidden {
+    //     display: none;
+    // }
+
     position: absolute;
     display: block;
     background:red;
@@ -209,27 +225,6 @@
             &--current {
                 color: $hover-focus-color;
                 transition: color $time $timing-function;
-                &:focus, &:hover {
-                    &::after {
-                        width: 48px;
-                        content: "";
-                        position: absolute;
-                        left: 0px;
-                        bottom: 0;
-    
-                        display: block;
-                        top: 46px;
-                        width: 100%;
-                        height: 4px;
-                        background-color: $hover-focus-color;   
-                        
-                        border-radius: 2px;
-                        opacity: 0;
-                        transition: opacity $time $timing-function;
-    
-                        opacity: 1;
-                    }
-                } 
             }
             &:hover, &:focus {
                 color: $hover-focus-color;
