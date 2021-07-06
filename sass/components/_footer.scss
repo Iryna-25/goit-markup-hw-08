@@ -43,6 +43,9 @@
 }
 
 .container-add {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     &__topic{
         text-transform: uppercase;
         height: 16px;

@@ -255,6 +255,12 @@
   margin-top: 20px;
 }
 
+.container-add {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .container-add__topic {
   text-transform: uppercase;
   height: 16px;
@@ -1208,6 +1214,7 @@ image {
 }
 
 .mobile .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1266,7 +1273,7 @@ image {
   color: #2196F3;
 }
 
-.mobile-contacts__link--tel {
+.mobile-contacts__link--mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
