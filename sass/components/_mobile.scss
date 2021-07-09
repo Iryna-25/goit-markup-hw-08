@@ -12,14 +12,11 @@
     &.is-open {
         transform: translateX(0);
     }
-
     @media screen and (min-width: 768px) {
         display: none;   
     }
     & .container {
         position: relative;
-        // padding-top: 40px;
-        // padding-bottom: 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -40,8 +37,7 @@
         }
         @media screen and (min-width: 768px) {
             display: none;   
-        }
-        
+        }   
     }
     &-menu {
         &__list {

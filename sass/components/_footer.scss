@@ -62,8 +62,6 @@
             width: 145px; 
             margin-top: 0px;
         }
-
-
     }
     &__list {
         margin: 20px 0px 0px 0px;
@@ -79,10 +77,8 @@
             display: inline-block;   
         }
         @media screen and (min-width: 1200px) {
-            display: flex;
-               
+            display: flex;     
         }
-        
     }
     &__link {
         display: flex;
@@ -127,7 +123,6 @@
             margin-right: 0px;
             text-align: left;
         }
-
     }
     &__label {
         text-transform: uppercase;

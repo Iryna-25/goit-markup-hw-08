@@ -962,10 +962,16 @@ image {
 }
 
 .hero-modal__input--comment {
-  width: 448px;
+  width: 370px;
   height: 120px;
   padding: 12px 16px;
   text-align: left;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-modal__input--comment {
+    width: 448px;
+  }
 }
 
 .hero-modal__input--comment::placeholder {
@@ -1210,6 +1216,9 @@ image {
 
 .portfolio-projects__item {
   margin-top: 30px;
+  width: 450px;
+  height: 404px;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1313,6 +1322,12 @@ image {
   line-height: 1.9;
   color: #757575;
   padding-top: 4px;
+}
+
+.portfolio image {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .team {

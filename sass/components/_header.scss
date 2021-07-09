@@ -35,34 +35,12 @@
             display: flex;    
         }
     }
-    // &__btn {
-    //     width: 40px;
-    //     height: 40px;
-    //     background-color: $main-text-white-color;
-    //     fill: red;
-    //     color: red;
-    //     &:hover, &:focus {
-    //         fill: $hover-focus-color; 
-    //         background-color: $main-text-white-color;
-    //     }
-    //     // & .nav__icon--menu {
-    //     //     display: none;
-    //     // }
-    //     // &.is-hidden .nav__icon--menu {
-    //     //     display: block;
-    //     // }
-    //     @media screen and (min-width: 768px) {
-    //         display: none;   
-    //     }
-    // }
     &__icon {
         fill: $main-title-color;
         &:hover, &:focus {
             fill: $hover-focus-color; 
         }      
     }
-
-
     &__link {
         display: flex;
         align-items: center;

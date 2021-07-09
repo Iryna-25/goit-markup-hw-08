@@ -12,7 +12,6 @@
                 justify-content: center ;
                 margin-bottom: 50px;
             } 
-
         }
         &__item {
             margin-bottom: 15px;
@@ -69,33 +68,15 @@
             display: flex;
             flex-wrap: wrap;
             list-style: none;
-            // margin-top: -30px;
-            // margin-left: -30px;
-            // & > .portfolio-projects__item {
-            //     margin-top: 30px;
-            //     // margin-left: 30px;
-            //     margin-left: 0px;
-            //     // @media screen and (min-width: 1200px) {
-            //     //    margin-left: 30px; 
-            //     // }
-            // }
-            // @media screen and (min-width: 1200px) {
-            //     &:nth-child(3n+3) {
-            //         margin-right: 15px;
-            //     }
-            //     &:nth-child(n+3) {
-            //         margin-left: 15px;
-            //     }
-            // }
         }
         &__item {
             margin-top: 30px;
-            // &:nth-child(3n + 3) {
-            //     margin-right: 0px;
-            // }
+            width: 450px;
+            height: 404px;
+            justify-content: center;
+
             @media screen and (min-width: 768px) {
                 flex-basis: calc((100% - 60px) / 2);
-                // margin-left: 30px;
                 width: 354px;
                 height: 440px;
                 &:nth-child(2n) {
@@ -104,7 +85,6 @@
             }
             @media screen and (min-width: 1200px) {
                 flex-basis: calc((100% - 60px) / 3);
-                // margin-left: 30px;
                 width: 370px;
                 height: 404px;
                 &:nth-child(2n) {
@@ -114,9 +94,6 @@
                     margin-left: 30px;
                     margin-right: 30px;
                 }
-                // &:nth-child(n+2) {
-                //     margin-left: 15px;
-                // }
             }
         }
         &__link{
@@ -187,4 +164,10 @@
             padding-top: 4px;
         }
     }
+}
+
+.portfolio image  {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
