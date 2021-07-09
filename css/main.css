@@ -672,6 +672,7 @@ a {
 }
 
 image {
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -712,6 +713,7 @@ image {
 
 @media screen and (min-width: 1200px) {
   .features {
+    padding-top: 0px;
     padding-bottom: 0px;
   }
 }
@@ -789,25 +791,57 @@ image {
 
 .hero {
   text-align: center;
-  max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  width: 480px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-m-1x.jpg);
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img.jpg);
   background-repeat: no-repeat;
   background-color: #2F303A;
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-t-1x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-d-1x.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .hero__title {
-  font-size: 44px;
-  line-height: 1.36;
   color: #FFFFFF;
   font-weight: 900;
   text-align: center;
-  width: 696px;
+  width: 360px;
+  font-size: 26px;
+  line-height: 1.61;
   margin: 0px auto;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.61;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
@@ -827,12 +861,17 @@ image {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
   background-color: #FFFFFF;
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   padding: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
 }
 
 .hero-modal__button--close {
@@ -874,6 +913,12 @@ image {
 .hero-modal__form {
   display: block;
   margin-left: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-modal__form {
+    width: 370px;
+  }
 }
 
 .hero-modal__div {
