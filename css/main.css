@@ -1206,17 +1206,36 @@ image {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin-top: -30px;
-  margin-left: -30px;
 }
 
-.portfolio-projects__list > .portfolio-projects__item {
+.portfolio-projects__item {
   margin-top: 30px;
-  margin-left: 30px;
 }
 
-.portfolio-projects__item:nth-child(3n + 3) {
-  margin-right: 0px;
+@media screen and (min-width: 768px) {
+  .portfolio-projects__item {
+    flex-basis: calc((100% - 60px) / 2);
+    width: 354px;
+    height: 440px;
+  }
+  .portfolio-projects__item:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-projects__item {
+    flex-basis: calc((100% - 60px) / 3);
+    width: 370px;
+    height: 404px;
+  }
+  .portfolio-projects__item:nth-child(2n) {
+    margin-left: 0px;
+  }
+  .portfolio-projects__item:nth-child(3n+2) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
 .portfolio-projects__link {
@@ -1311,12 +1330,6 @@ image {
   text-align: center;
 }
 
-@media screen and (min-width: 480px) {
-  .team__list {
-    margin-left: 0px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .team__list {
     display: flex;
@@ -1335,12 +1348,16 @@ image {
 .team__item {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: #FFFFFF;
+  width: 450px;
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .team__item {
     flex-basis: calc((100% - 60px) / 2);
+    height: 536px;
+  }
+  .team__item:nth-child(2n) {
     margin-left: 30px;
   }
 }
@@ -1348,6 +1365,8 @@ image {
 @media screen and (min-width: 1200px) {
   .team__item {
     flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
+    height: 428px;
   }
 }
 
@@ -1377,6 +1396,7 @@ image {
 
 .team-div__list {
   display: flex;
+  justify-content: center;
   align-content: center;
 }
 
@@ -1409,6 +1429,12 @@ image {
   display: flex;
   align-content: center;
   text-align: center;
+}
+
+.team image {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .mobile {
