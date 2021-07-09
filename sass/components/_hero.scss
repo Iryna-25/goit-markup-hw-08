@@ -68,6 +68,11 @@
             min-width: 450px;
             min-height: 609px;
         }
+        @media screen and (min-width: 1200px) {
+            min-width: 528px;
+            min-height: 581px;
+        }
+
 
         &__button {
             &--close {
@@ -109,6 +114,9 @@
             @media screen and (min-width: 480px) {
                 width: 370px;
             }
+            @media screen and (min-width: 1200px) {
+                width: 448px;
+            }
         }
         &__div {
             position: relative;
@@ -117,6 +125,7 @@
             &:nth-child(4) {
                 margin-bottom: 20px;
             }
+            font-size: 12px;
             &--check {
                 position: relative;
                 margin-bottom: 30px; 
@@ -212,6 +221,13 @@
                 border: 2px solid $main-title-color;
                 border-radius: 4px;
             }
+        }
+        &__text {
+            font-size: 12px;
+            @media screen and (min-width: 1200px) { 
+                width: 14px;
+            }
+            
         }
         &__data{
             font-weight: 700;

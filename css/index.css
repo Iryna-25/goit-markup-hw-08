@@ -874,6 +874,13 @@ image {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
+
 .hero-modal__button--close {
   position: absolute;
   width: 30px;
@@ -921,10 +928,17 @@ image {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-modal__form {
+    width: 448px;
+  }
+}
+
 .hero-modal__div {
   position: relative;
   margin-top: 4px;
   margin-bottom: 10px;
+  font-size: 12px;
 }
 
 .hero-modal__div:nth-child(4) {
@@ -1041,6 +1055,16 @@ image {
   background-color: #FFFFFF;
   border: 2px solid #212121;
   border-radius: 4px;
+}
+
+.hero-modal__text {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-modal__text {
+    width: 14px;
+  }
 }
 
 .hero-modal__data {
