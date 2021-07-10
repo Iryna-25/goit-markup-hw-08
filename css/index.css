@@ -1,6 +1,8 @@
 .header {
   position: relative;
   border-bottom: 1px solid #ECECEC;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header__container {
@@ -10,7 +12,6 @@
 
 .nav {
   align-items: center;
-  padding-top: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -25,8 +26,6 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .nav__list .nav__item:not(:last-child) {
@@ -203,18 +202,6 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .footer {
-    padding-top: 0px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding-top: 60px;
-  }
-}
-
 .footer .container {
   align-items: baseline;
 }
@@ -231,6 +218,10 @@
   .footer .container {
     display: flex;
   }
+}
+
+.footer__info {
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 480px) {
@@ -259,6 +250,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 
 .container-add__topic {
@@ -274,14 +266,12 @@
 @media screen and (min-width: 480px) {
   .container-add__topic {
     display: block;
-    margin-top: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container-add__topic {
     width: 145px;
-    margin-top: 0px;
   }
 }
 
@@ -335,10 +325,6 @@
   display: block;
 }
 
-.container-mailing {
-  display: inline-block;
-}
-
 @media screen and (min-width: 480px) {
   .container-mailing__list {
     display: inline-block;
@@ -378,8 +364,6 @@
   color: #FFFFFF;
   width: 200px;
   height: 50px;
-  padding-left: 29px;
-  margin-left: 12px;
 }
 
 .container-mailing__button:hover, .container-mailing__button:focus {
@@ -391,14 +375,16 @@
   .container-mailing__button {
     display: inline-block;
     text-align: center;
-    margin-top: 20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container-mailing__button {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 36px;
+    padding-left: 29px;
+    margin-left: 12px;
   }
 }
 
@@ -433,23 +419,24 @@
   }
 }
 
+.container-mailing__form {
+  margin-bottom: 20px;
+}
+
 @media screen and (min-width: 480px) {
   .container-mailing__form {
-    margin-top: 60px;
     width: 450px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container-mailing__form {
-    margin-top: 60px;
     width: 480px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container-mailing__form {
-    margin-top: 0px;
     width: 358px;
   }
 }
@@ -538,14 +525,15 @@
 }
 
 .clients__list {
+  display: flex;
+  flex-wrap: wrap;
   align-content: center;
 }
 
 @media screen and (min-width: 480px) {
   .clients__list {
-    display: flex;
-    flex-wrap: wrap;
     margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -557,7 +545,7 @@
   .clients__item {
     flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -570,7 +558,6 @@
 @media screen and (min-width: 1200px) {
   .clients__item {
     flex-basis: calc((100% - 180px) / 6);
-    margin-bottom: 0px;
   }
 }
 
@@ -727,6 +714,7 @@ image {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -736,7 +724,7 @@ image {
   }
 }
 
-.features__item {
+.features__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -744,6 +732,7 @@ image {
   .features__item {
     flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
+    margin-top: 30px;
     margin-bottom: 0px;
   }
 }
@@ -1171,14 +1160,8 @@ image {
   .team__list {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team__list {
-    display: flex;
-    flex-wrap: wrap;
     margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -1186,6 +1169,9 @@ image {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: #FFFFFF;
   width: 450px;
+}
+
+.team__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -1193,16 +1179,14 @@ image {
   .team__item {
     flex-basis: calc((100% - 60px) / 2);
     height: 536px;
-  }
-  .team__item:nth-child(2n) {
     margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team__item {
     flex-basis: calc((100% - 120px) / 4);
-    margin-left: 30px;
     height: 428px;
   }
 }

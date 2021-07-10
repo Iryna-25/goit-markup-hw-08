@@ -4,12 +4,12 @@
         padding-top: 60px;
         padding-bottom: 60px;   
     }
-    @media screen and (min-width: 768px) {
-        padding-top: 0px;
-    }
-    @media screen and (min-width: 1200px) {
-        padding-top: 60px;
-    }
+    // @media screen and (min-width: 768px) {
+    //     padding-top: 0px;
+    // }
+    // @media screen and (min-width: 1200px) {
+    //     padding-top: 60px;
+    // }
     & .container{
         align-items: baseline;
         @media screen and (min-width: 786px) {
@@ -23,7 +23,7 @@
         }
     }
     &__info {
-        
+        margin-bottom: 60px;
         @media screen and (min-width: 480px) {
             text-align: center;    
         }
@@ -46,6 +46,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 60px;
     &__topic{
         text-transform: uppercase;
         height: 16px;
@@ -56,11 +57,11 @@
         text-align: center;
         @media screen and (min-width: 480px) {
             display: block;   
-            margin-top: 60px;
+            // margin-top: 60px;
         }
         @media screen and (min-width: 1200px) { 
             width: 145px; 
-            margin-top: 0px;
+            // margin-top: 0px;
         }
     }
     &__list {
@@ -108,7 +109,6 @@
 }
 
 .container-mailing {
-    display: inline-block;
     &__list{
         @media screen and (min-width: 480px) {
             display: inline-block;
@@ -143,8 +143,8 @@
         color: $main-text-white-color;
         width: 200px;
         height: 50px;
-        padding-left: 29px;
-        margin-left: 12px;
+        // padding-left: 29px;
+        // margin-left: 12px;
         &:hover, &:focus {
             background-color: $hover-focus-color;
             color: $main-text-white-color;
@@ -153,11 +153,14 @@
         @media screen and (min-width: 480px) {
             display: inline-block;
             text-align: center;
-            margin-top: 20px;
+            // margin-top: 20px;
         }
         @media screen and (min-width: 1200px) {
             display: flex;
+            flex-wrap: wrap;
             margin-top: 36px;
+            padding-left: 29px;
+            margin-left: 12px;
         }
     }
     &__icon {
@@ -185,16 +188,17 @@
         }
     }
     &__form {
+        margin-bottom: 20px;
         @media screen and (min-width: 480px) {
-            margin-top: 60px;
+            // margin-top: 60px;
             width: 450px;
         }
         @media screen and (min-width: 768px) {
-            margin-top: 60px;
+            // margin-top: 60px;
             width: 480px;
         }
         @media screen and (min-width: 1200px) {
-            margin-top: 0px;
+            // margin-top: 0px;
             width: 358px;
         }
     }
