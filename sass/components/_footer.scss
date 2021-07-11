@@ -23,6 +23,7 @@
         }
         
         @media screen and (min-width: 1200px) {
+            width: 1200px;
             display: flex;  
             flex-wrap: nowrap;  
         }
@@ -35,6 +36,7 @@
         @media screen and (min-width: 1200px) {
             margin-right: 70px;
             text-align: left; 
+            margin-bottom: 0px;
         }        
     }
     &__address {
@@ -66,7 +68,7 @@
         }
         @media screen and (min-width: 1200px) { 
             width: 145px; 
-            // margin-top: 0px;
+            margin-bottom: 0px;
         }
     }
     &__list {

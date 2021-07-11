@@ -6,6 +6,9 @@
             display: flex;
             flex-wrap: wrap;
             transition: box-shadow $time $timing-function;
+            @media screen and (min-width: 480px) {
+                margin-bottom: 40px;
+            }
             @media screen and (min-width: 768px) {
                 display: flex;
                 align-content: center;
@@ -15,6 +18,9 @@
         }
         &__item {
             margin-bottom: 15px;
+            &:nth-last-child(-n+2)  {
+                margin-bottom: 0px;
+            }
             @media screen and (min-width: 768px) {
                 margin-bottom: 0px;   
             } 
@@ -81,9 +87,9 @@
             &:not(:last-child) {
                 margin-bottom: 30px;
             }
-            &:first-child {
-                margin-top: 30px;
-            }
+            // &:first-child {
+            //     margin-top: 30px;
+            // }
 
             @media screen and (min-width: 768px) {
                 flex-basis: calc((100% - 60px) / 2);
